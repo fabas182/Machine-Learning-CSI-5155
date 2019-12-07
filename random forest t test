@@ -1,0 +1,24 @@
+Tester:     weka.experiment.PairedCorrectedTTester -G 4,5,6 -D 1 -R 2 -S 0.05 -V -result-matrix "weka.experiment.ResultMatrixPlainText -mean-prec 2 -stddev-prec 2 -col-name-width 0 -row-name-width 25 -mean-width 2 -stddev-width 2 -sig-width 1 -count-width 5 -show-stddev -print-col-names -print-row-names -enum-col-names"
+Analysing:  Percent_correct
+Datasets:   1
+Resultsets: 6
+Confidence: 0.05 (two tailed)
+Sorted by:  -
+Date:       12/5/19 10:51 AM
+
+
+Dataset                   (6) trees.RandomFo | (1) trees.J48 ' (2) rules.Decis (3) lazy.IBk '- (4) bayes.Naive (5) functions.L
+------------------------------------------------------------------------------------------------------------------------------
+'dataset4with3classes - 1(100)   95.88(0.71) |   89.68(0.95) *   82.55(2.22) *   94.70(0.61) *   90.92(0.79) *   94.98(0.62) *
+------------------------------------------------------------------------------------------------------------------------------
+                                     (v/ /*) |         (0/0/1)         (0/0/1)         (0/0/1)         (0/0/1)         (0/0/1)
+
+
+Key:
+(1) trees.J48 '-C 0.25 -M 2' -217733168393644444
+(2) rules.DecisionTable '-X 1 -S \"BestFirst -D 1 -N 5\"' 2888557078165701326
+(3) lazy.IBk '-K 1 -W 0 -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"' -3080186098777067172
+(4) bayes.NaiveBayes '' 5995231201785697655
+(5) functions.Logistic '-R 1.0E-8 -M -1 -num-decimal-places 4' 3932117032546553727
+(6) trees.RandomForest '-P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1' 1116839470751428698
+
